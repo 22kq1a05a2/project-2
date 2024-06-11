@@ -1,0 +1,90 @@
+<html>
+   <head>
+         <title>JavaScript functions </title>
+      </head>      
+      
+      <style>
+       
+ 
+        body {
+            background: url(ibg1.jpg);
+            
+            background-size: cover;
+            background-color: rgb(19, 22, 221);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        }
+        /*smart phone*/
+        @media screen and (min-width:550px){
+            body{
+                
+                background: url(ibg2.jpg);  
+                background-size: cover;
+                background-color: rgb(181, 9, 81);
+                color: rgb(7, 7, 7);
+           
+            }
+        }
+        /*tablet and ipad*/
+        @media screen and (min-width:768px) and (max-width:1024px){
+            body{
+                
+                background: url(im5.jpg);  
+                background-size: cover;
+                background-color: rgb(33, 209, 27);
+                color: rgb(0, 0, 0);
+           
+            }}
+            /*labtab and desktop*/
+            @media screen and (min-width:1224px){
+            body{
+                background: url(ibg4.jpg);  
+                background-size: cover;
+                background-color: rgb(224, 221, 15);
+                color: rgb(12, 12, 12);
+           
+            }}
+            /* Larfge screen*/
+            @media screen and (min-width:1824px){
+            body{
+                background: url(ibg5.jpg);  
+                background-size: cover;
+                background-color: rgb(211, 11, 11);
+                color: rgb(0, 0, 0);
+           
+            }}
+                         
+                
+    </style>
+                 
+      <script>
+         // User Validations
+ function loginValidation() {
+             // Ramesh
+   var uname = document.myform.username.value;
+              //Ramesh@123
+   var password = document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+            return true                 
+         }           
+      </script>
+      </head>
+      <body>
+          <h2>Login Page</h2>  
+<form name="myform" action="LoginSuccess.html" 	onsubmit="return loginValidation(this)">
+ 
+User Name : <br>
+<input type="text" name="username"> <br>
+Password : <br>
+ <input type="password" name="password"> <br>
+         <input type="submit" value="Submit">     
+          
+        </form>
+   </body>
+</html>
